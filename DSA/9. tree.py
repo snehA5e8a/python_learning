@@ -1,3 +1,4 @@
+#print name and/or designation for the organisational chart
 class TreeNode:
     def __init__(self, data1, data2):
         self.data1 = data1

@@ -2,7 +2,7 @@ def bubble_sort(arr):
     l = len(arr)
     i = 0
     while l>0:
-        for i in range(l-1):
+        for i in range(l-1): #highest to the right
             if arr[i]> arr[i+1]:
                 temp = arr[i]
                 arr[i] = arr[i+1]
@@ -11,6 +11,7 @@ def bubble_sort(arr):
         l -= 1
         i =0
 
+#sorting array of dictionaries
 def bubble_sort1(arr,key):
     l = len(arr)
     i = 0

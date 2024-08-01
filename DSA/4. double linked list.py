@@ -58,7 +58,7 @@ class Dlinked:
             self.head = Node(data, None, None)
             return
         itr = self.head
-        while itr.next:
+        while itr.next: #last element's next will be none
             itr = itr.next
         itr.next = Node(data, itr, None)
 

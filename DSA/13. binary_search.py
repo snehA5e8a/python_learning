@@ -6,18 +6,18 @@ def linear_search(arr, val):
 
 def binary_search(arr,val,start, end):
     mid = (start+end)//2
-    if (arr[0]== val):
+    if (arr[0] == val): #finding val
         return 0
     while start<=end:
         if arr[mid] ==val:
             return mid
-        if arr[mid]<val:
+        if arr[mid] < val: #searching right side
             start = mid+1
-            return binary_search(arr,val,start,end)
-        if arr[mid]>val:
+            return binary_search(arr, val, start, end)
+        if arr[mid]>val: #searching left side
             end = mid -1
             return binary_search(arr, val,start, end)
-    return -1
+    return -1 #if not found
 
 def find_all_occurances(numbers, number_to_find):
     index = binary_search(numbers, number_to_find,0, len(numbers)-1)

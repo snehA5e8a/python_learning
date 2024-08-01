@@ -23,14 +23,14 @@ class HashTable:
             if len(element) == 2 and element[0] == key: #if replacing the value of key
                 self.arr[h][idx] = (key, value)
                 F = True
-        if not F: #not replacing the hash value of 2 keys are same, so appending
+        if not F: #not replacing, the hash value of 2 keys are same, so appending
             self.arr[h].append((key, value))
 
 
     def __delitem__(self, key):
         h = self.get_hash(key)
         for ind, item in enumerate(self.arr[h]):
-            if item[0] == key:
+if item[0] == key: #item is a dict
                 del self.arr[h][ind]
 
 

@@ -1,3 +1,4 @@
+#If a location is already filled, it will check for the next empty location
 class HashTable:
     def __init__(self):
         self.max = 10

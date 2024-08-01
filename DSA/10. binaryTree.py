@@ -65,6 +65,7 @@ class BinarySearchTree:
         elements = self.inOrder()
         s = 0
         for i in elements:
+
             s += i
         return s
         #left_sum = self.left.calculate_sum() if self.left else 0

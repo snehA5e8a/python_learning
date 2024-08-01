@@ -1,5 +1,5 @@
 
-def partition (arr, start, end):
+def partition(arr, start, end):
     pivot_index = start
     pivot = arr[pivot_index]
     while start < end:
