@@ -15,3 +15,5 @@ except TypeError as e:
     print(f'{e}: Type error occurred')
 except ValueError as v:
     print(f'{v}: Value error occurred')
+
+quit()
